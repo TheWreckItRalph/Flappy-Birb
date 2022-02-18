@@ -48,9 +48,9 @@ PlayerUserName's Bio:
 <hr>
 
 <h2 style="text-align: center">PlayerUserName's Game Data</h2>
+<h2 style="text-align: center">Total Click Count / Highest Score Obtained / Total Coins Collected</h2> 
 
 
-<h2 style="text-align: center">Total Click Count / Highest Score Obtained / Total Coins Collected</h2>  
 
 <hr>
 
