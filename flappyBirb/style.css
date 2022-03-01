@@ -55,18 +55,4 @@ body {
     left: 36vw;
     text-align: center;
 }
-  
-.score {
-    position: fixed;
-    z-index: 10;
-    height: 10vh;
-    font-size: 8vh;
-    font-weight: 100;
-    color: gold;
-    top: 0;
-    left: 0;
-}
-  
-.score_val {
-    color: gold;
-}
+

@@ -8,10 +8,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title>Profile Page</title>
     <link rel="stylesheet" href="/flappyBirb/user/profile.css"> 
- 
 </head>
 <body>
 
@@ -34,7 +32,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
 
-PlayerUserName's Bio:
+<p>PlayerUserName's Bio:</p>
 <textarea name="message" rows="10" cols="30">
 </textarea>
 <input type="submit">
@@ -48,9 +46,7 @@ PlayerUserName's Bio:
 <hr>
 
 <h2 style="text-align: center">PlayerUserName's Game Data</h2>
-<h2 style="text-align: center">Total Click Count / Highest Score Obtained / Total Coins Collected</h2> 
-
-
+<h2 style="text-align: center">Total Click Count / Total Coins Collected</h2> 
 
 <hr>
 

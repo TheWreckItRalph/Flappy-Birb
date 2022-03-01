@@ -18,7 +18,7 @@
         <span class="score_title"></span>
         <span class="score_val"></span>
     </div>
-         <script src="/test2/script.js"></script>     
+         <script src="/flappyBirb/script.js"></script>     
    
 </div>
 

@@ -33,6 +33,14 @@ if (mysqli_num_rows($result) > 0) {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
       }
 
+      $sql1 =  "INSERT INTO profiles (uid)
+      VALUES (".$row["uid"].")";
+
+    if (mysqli_query($conn, $sql1)) {
+        echo "New record created successfully ";
+    } else {
+        echo "Error: " . $sql1 . "<br>" . mysqli_error($conn);
+    }
 
 
     } // END: email found

@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql = "SELECT * FROM emailVerify WHERE email='".$email."'";
         $result = mysqli_query($conn, $sql);
    
-        if (mysqli_num_rows($result) > 0) {
+        if (mysqli_num_rows($result) > 0) { 
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
             $passwordHash = $row['password'];
