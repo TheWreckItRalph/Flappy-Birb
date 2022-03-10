@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
          $headers  = 'MIME-Version: 1.0' . "\r\n";
          $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-         $headers .= 'From: nle@choppa.com';
+         $headers .= 'From: fadi@yohanna.com';
          $message = '<html><body>';
          $message .= '<h1 style="color:#f40;">Hi!</h1>';
          $message .= '<p style="color:#f40;">Here is your HASH# <a href="https://port-3000-flappy-bird-349836947169.preview.codeanywhere.com/flappyBirb/verify.php?hash='.$hash.'&email='.$emailAddress.'">'.$hash.'</a></p>';

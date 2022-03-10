@@ -3,6 +3,10 @@
     require_once $_SERVER['DOCUMENT_ROOT'].'/flappyBirb/db/connect.php';
     $sql = "SELECT * FROM profiles WHERE uid='".$_SESSION['user']['uid']."'";
     $result = mysqli_query($conn, $sql);
+
+    //Display collected data
+    
+    
 ?>
 
 <!DOCTYPE html>
@@ -13,10 +17,12 @@
 </head>
 <body>
 
+<a href="/flappyBirb/user/profileEdit.php" style="text-align: center">Edit Profile</a>
+
 <h2 style="text-align: center">PlayerUserName's Profile</h2>
 
 <div class="card">
-<img src="" alt="Profile Picture">
+<img src="#" alt="">
 </div>
 
 <br><br>
@@ -27,22 +33,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
 <label for="status">Status:</label>
-<select id="status" name="status">
-  <option value="online">Online</option>
-  <option value="offline">Offline</option>
-</select>
+<input type="status" id="status" name="status">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
 
-PlayerUserName's Bio:
-<textarea name="message" rows="10" cols="30">
-</textarea>
-<input type="submit">
+<label for="bio">Bio:</label>
+<input type="text" id="bio" name="bio">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
 
 <label for="dateJoined">Date Joined:</label>
-<input type="text" id="dateJoined" name="dateJoined" value=""><br>
+<input type="text" id="dateJoined" name="dateJoined"><br>
 
 <br><br>
 <hr>
@@ -53,12 +54,12 @@ PlayerUserName's Bio:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
 <label for="clickCount">Click Count:</label>
-<input type="text" id="clickCount" name="clickCount" value="">
+<input type="text" id="clickCount" name="clickCount">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
 <label for="clickCount">Coins Collected:</label>
-<input type="text" id="coinsCollected" name="coinsCollected" value=""><br>
+<input type="text" id="coinsCollected" name="coinsCollected"><br>
 
 <hr>
 

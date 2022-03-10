@@ -1,46 +1,9 @@
 #canvas
 {
-    background-image: url("https://healeycodes.com/_next/image?url=%2Fposts%2Fflappy-bird%2Fflappy-bird.gif&w=640&q=100");
-    background-size: 100% 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-body {
-    background: url("https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png");
-    background-repeat: no-repeat;
-    background-size: 100% 230%;
-  }
-
-  .BTN-submit {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  .bird {
-    height: 120px;
-    width: 140px;
-    position: fixed;
-    top: 40vh;
-    left: 38vw;
-    z-index: 100;
-}
-  
-.pipe_sprite {
-    position: fixed;
-    top: 40vh;
-    left: 100vw;
-    height: 70vh;
-    width: 6vw;
-    background: url("Objects/pipe.png");
-}
-
+    background-color:#30c0df;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+    padding: auto;
+    
+} 
