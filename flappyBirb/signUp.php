@@ -88,8 +88,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          $headers .= 'From: fadi@yohanna.com';
          $message = '<html><body>';
          $message .= '<h1 style="color:#f40;">Hi!</h1>';
-         $message .= '<p style="color:#f40;">Here is your HASH# <a href="https://port-3000-flappy-bird-349836947169.preview.codeanywhere.com/flappyBirb/verify.php?hash='.$hash.'&email='.$emailAddress.'">'.$hash.'</a></p>';
+         $message .= '<p style="color:#f40;">Verify Account --> <a href="https://port-3000-flappy-bird-349836947169.preview.codeanywhere.com/flappyBirb/verify.php?hash='.$hash.'&email='.$emailAddress.'">'.$hash.'</a></p>';
          $message .= '</body></html>';
+
+         
         
          mail($to_email,$subject,$message,$headers);
      

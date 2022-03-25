@@ -17,7 +17,7 @@
         <span class="score_title"></span>
         <span class="score_val"></span>
     </div>
-         <script src="script.js"></script>     
+         <script src="/test3/game.js"></script>     
    
 </div>
 

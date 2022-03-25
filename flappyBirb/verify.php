@@ -52,6 +52,7 @@ echo "0 results";
 }
  echo "Hash Found: $hashFound <br>";
 echo "Email Found: $emailFound <br>";
+echo "Date Verified: $dateVerified <br>";
 echo "Status: $status <br>";
  
 mysqli_close($conn);

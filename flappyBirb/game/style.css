@@ -1,0 +1,20 @@
+#canvas
+{
+    background-size: 100% 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+body {
+    /* background: url("https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 230%; */
+    background-color: #23A4C4;
+  }
+
