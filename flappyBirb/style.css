@@ -1,11 +1,13 @@
 #canvas
 {
-    background-image: url("https://healeycodes.com/_next/image?url=%2Fposts%2Fflappy-bird%2Fflappy-bird.gif&w=640&q=100");
-    background-size: 100% 100%;
+    /* background-image: url("https://healeycodes.com/_next/image?url=%2Fposts%2Fflappy-bird%2Fflappy-bird.gif&w=640&q=100"); */
+    background-size: 50% 100%;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 
@@ -15,44 +17,4 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 230%;
   }
-
-  .BTN-submit {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  .bird {
-    height: 120px;
-    width: 140px;
-    position: fixed;
-    top: 40vh;
-    left: 38vw;
-    z-index: 100;
-}
-  
-.pipe_sprite {
-    position: fixed;
-    top: 40vh;
-    left: 100vw;
-    height: 70vh;
-    width: 6vw;
-    background: url("Objects/pipe.png");
-}
-  
-.message {
-    position: fixed;
-    z-index: 10;
-    height: 10vh;
-    font-size: 5vh;
-    font-weight: 100;
-    color: black;
-    top: 12vh;
-    left: 36vw;
-    text-align: center;
-}
 

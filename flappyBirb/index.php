@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 <br>
-<script src="/flappyBirb/script.js"></script>
+<script src="/test3/game.js"></script>
 
 </body>
 </html>

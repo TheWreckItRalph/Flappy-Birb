@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FlappyBirb</title>
+    <title>FlappyBird</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
@@ -17,7 +17,7 @@
         <span class="score_title"></span>
         <span class="score_val"></span>
     </div>
-         <script src="script.js"></script>     
+         <script src="/test3/game.js"></script>     
    
 </div>
 

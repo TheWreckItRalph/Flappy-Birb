@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Flappy Bird</title>
+    <title>Flappy Birb</title>
     <link rel="stylesheet" href="/style.css"> 
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
 </head>
