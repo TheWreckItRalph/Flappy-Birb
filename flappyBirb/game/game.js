@@ -323,7 +323,7 @@ const RAD = Math.PI/180;
 
 gnd.sprite.src="/Flappy Bird Backgrounds/ground2.png";
 bg.sprite.src="/Flappy Bird Backgrounds/BG.png";
-pipe.top.sprite.src="/flappyBirb/game/images/game/testpipe3.png";
+pipe.top.sprite.src="/flappyBirb/game/images/game/testpipe4.png";
 pipe.bot.sprite.src="/flappyBirb/game/images/game/testpipe2.png";
 UI.gameOver.sprite.src="/tutorial3/img/go.png";
 UI.getReady.sprite.src="/tutorial3/img/getready.png";
