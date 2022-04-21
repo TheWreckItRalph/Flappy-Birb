@@ -24,23 +24,13 @@
     <div class="col-sm">
 
 
-    <select id="gravity" onchange="changeGravity()">
-        <option value=.125>regular</option>
-        <option value=.1>low</option>
-        <option value=.2>high</option>
-    </select>
+    <select id="gravity">
+  <option value=".125">Regular</option>
+  <option value=".1">Low</option>
+  <option value=".2">High</option>
+</select>
 
-    <p id="demo"></p>
-
-        <script>
-        function changeGravity() {
-        var x = document.getElementById("gravity").value;
-        document.getElementById("demo").innerHTML = "You selected: " + x;
-        }
-        </script>
-
-
-  
+ 
     </div>
   </div>
 </div>

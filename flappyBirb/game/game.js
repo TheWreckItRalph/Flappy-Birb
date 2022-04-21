@@ -1,3 +1,9 @@
+// var newGravity = .1;
+// function changeGravity() {
+//     var newGravity = Number(document.getElementById("gravity").value);
+    
+//   }
+
 var newGravity = document.getElementById("gravity");
 
 const RAD = Math.PI/180;
@@ -92,7 +98,7 @@ const RAD = Math.PI/180;
  const pipe = {
      top : {sprite : new Image()},
      bot : {sprite : new Image()},
-     gap: 100,
+     gap: 125,
      moved: true,
      pipes : [],
      draw : function(){
@@ -135,12 +141,8 @@ const RAD = Math.PI/180;
     x : 50,
     y :100,
 
-
-    speed : 1,
-
-
-    
-    gravity : Number(newGravity.value),
+    speed : 1,    
+    gravity : Number(document.getElementById("gravity").value),
     
 
     
@@ -243,6 +245,7 @@ const RAD = Math.PI/180;
                 
         }
     }
+    
  };
  const UI = {
     getReady : {sprite : new Image()},
@@ -318,10 +321,10 @@ const RAD = Math.PI/180;
 
  };
 
-gnd.sprite.src="/flappyBirb/game/images/game/ground_copy.png";
+gnd.sprite.src="/Flappy Bird Backgrounds/ground2.png";
 bg.sprite.src="/Flappy Bird Backgrounds/BG.png";
-pipe.top.sprite.src="/flappyBirb/game/images/game/toppipe.png";
-pipe.bot.sprite.src="/flappyBirb/game/images/game/botpipe.png";
+pipe.top.sprite.src="/flappyBirb/game/images/game/testpipe3.png";
+pipe.bot.sprite.src="/flappyBirb/game/images/game/testpipe2.png";
 UI.gameOver.sprite.src="/tutorial3/img/go.png";
 UI.getReady.sprite.src="/tutorial3/img/getready.png";
 UI.tap[0].sprite.src="/flappyBirb/game/images/tap/t0.png";

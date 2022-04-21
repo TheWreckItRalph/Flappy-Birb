@@ -18,3 +18,8 @@ body {
     background-size: 100% 230%;
   }
 
+
+  .imgContainer {
+    float: left;
+  }
+
