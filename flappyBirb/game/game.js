@@ -1,5 +1,4 @@
 var newGravity = document.getElementById("gravity");
-
 const RAD = Math.PI/180;
  const scrn = document.getElementById('canvas');
  const sctx = scrn.getContext("2d");
@@ -135,15 +134,12 @@ const RAD = Math.PI/180;
     x : 50,
     y :100,
 
-
     speed : 1,
-
-
-    
+   
     gravity : Number(newGravity.value),
-    
+   
+    gravity : .1,
 
-    
     thrust : 3.6,
     frame:0,
     draw : function() {
@@ -324,6 +320,11 @@ pipe.top.sprite.src="/flappyBirb/game/images/game/toppipe.png";
 pipe.bot.sprite.src="/flappyBirb/game/images/game/botpipe.png";
 UI.gameOver.sprite.src="/tutorial3/img/go.png";
 UI.getReady.sprite.src="/tutorial3/img/getready.png";
+bg.sprite.src="/flappyBirb/game/images/game/BG.png";
+pipe.top.sprite.src="/flappyBirb/game/images/game/toppipe.png";
+pipe.bot.sprite.src="/flappyBirb/game/images/game/botpipe.png";
+UI.gameOver.sprite.src="/flappyBirb/game/images/game/go.png";
+UI.getReady.sprite.src="/flappyBirb/game/images/game/getready.png";
 UI.tap[0].sprite.src="/flappyBirb/game/images/tap/t0.png";
 UI.tap[1].sprite.src="/flappyBirb/game/images/tap/t1.png";
 bird.animations[0].sprite.src="/flappyBirb/game/images/bird/d0.png";

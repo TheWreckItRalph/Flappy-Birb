@@ -60,7 +60,11 @@
     <p>Link URL</p>
     <input type="text" name="linkURL" value="<?php echo $linkURL;?>"><br>
     <p>Profile Picture</p>
+
     <input type="text" name="profilePicture" value="<?php echo $profilePicture;?>"><br><br>
+
+    <input type="text" name="profilePicture" value="<?php echo $profileImage;?>"><br><br>
+
     <details>
         <summary>Game Profile Pictures</summary>
         <ul>
