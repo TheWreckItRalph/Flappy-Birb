@@ -91,7 +91,7 @@ const bg = {
 const pipe = {
     top : {sprite : new Image()},
     bot : {sprite : new Image()},
-    gap:85,
+    gap:100,
     moved: true,
     pipes : [],
     draw : function(){
@@ -316,10 +316,10 @@ UI.gameOver.sprite.src="/gameTest/img/go.png";
 UI.getReady.sprite.src="/gameTest/img/getready.png";
 UI.tap[0].sprite.src="/gameTest/tap/t0.png";
 UI.tap[1].sprite.src="/gameTest/tap/t1.png";
-bird.animations[0].sprite.src="/Flappy Bird Animations/Flappy Bird Default/d0.png";
-bird.animations[1].sprite.src="/Flappy Bird Animations/Flappy Bird Default/d1.png";
-bird.animations[2].sprite.src="/Flappy Bird Animations/Flappy Bird Default/d2.png";
-bird.animations[3].sprite.src="/Flappy Bird Animations/Flappy Bird Default/d0.png";
+bird.animations[0].sprite.src="/Flappy Bird Animations/Flappy Girb/fg0.png";
+bird.animations[1].sprite.src="/Flappy Bird Animations/Flappy Girb/fg1.png";
+bird.animations[2].sprite.src="/Flappy Bird Animations/Flappy Girb/fg2.png";
+bird.animations[3].sprite.src="/Flappy Bird Animations/Flappy Girb/fg0.png";
 SFX.start.src = "sfx/start.wav"
 SFX.flap.src = "sfx/flap.wav"
 SFX.score.src = "sfx/score.wav"
