@@ -47,6 +47,8 @@
     }
 ?>
 
+
+
 <a href="/flappyBirb/user/profilePage.php">View Profile</a>
 <link rel="stylesheet" href="/flappyBirb/user/profile.css"> 
 

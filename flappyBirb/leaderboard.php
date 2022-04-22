@@ -34,7 +34,7 @@ body {
 
 <h2 style="text-align: center">★ ∼ Leaderboard ∼ ★</h2>
 
-<h8>Leaderboard Scores</h8>
+<h2>Leaderboard Scores</h2>
 
 <table>
     <tr>
