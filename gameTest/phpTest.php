@@ -11,23 +11,27 @@
     <link rel="stylesheet" href="/flappyBirb/game/style.css" > 
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
   </head>
+  
   <body>
 
-  
+  <a href="/flappyBirb/user/profilePage.php"><button type="button" id="button2">View Profile</button></a>
 
 
   <div class="container">
   <div class="row">
     <div class="col-sm">
-    <a href="/flappyBirb/user/profilePage.php"><button type="button" id="button2">View Profile</button></a>
+      
     </div>
     <div class="col-sm">
     <canvas id="canvas" width="500" height="700"></canvas>
        </div>
     <div class="col-sm">
-        <select id="gravity">
-            <option value=".125">Regular</option>
-        </select>
+
+
+    <select id="gravity">
+  <option value=".125">Regular</option>
+</select>
+
     </div>
   </div>
 </div>
