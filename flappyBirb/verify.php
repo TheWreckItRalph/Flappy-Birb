@@ -28,7 +28,7 @@ if (mysqli_num_rows($result) > 0) {
 
     
       if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully ";
+        echo "New record created successfully<br>";
       } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
       }
@@ -37,7 +37,7 @@ if (mysqli_num_rows($result) > 0) {
       VALUES (".$row["uid"].")";
 
     if (mysqli_query($conn, $sql1)) {
-        echo "New record created successfully ";
+        echo "New record created successfully<br>";
     } else {
         echo "Error: " . $sql1 . "<br>" . mysqli_error($conn);
     }
@@ -52,6 +52,7 @@ echo "0 results";
 }
  echo "Hash Found: $hashFound <br>";
 echo "Email Found: $emailFound <br>";
+echo "Date Verified: $dateVerified <br>";
 echo "Status: $status <br>";
  
 mysqli_close($conn);

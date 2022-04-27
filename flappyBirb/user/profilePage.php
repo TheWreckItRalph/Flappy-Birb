@@ -1,8 +1,16 @@
 <?php 
     session_start();
     require_once $_SERVER['DOCUMENT_ROOT'].'/flappyBirb/db/connect.php';
-    $sql = "SELECT * FROM profiles WHERE uid='".$_SESSION['user']['uid']."'";
+    $sql = "SELECT * FROM profiles WHERE uid = '".$_SESSION['user']['uid']."'";
     $result = mysqli_query($conn, $sql);
+
+    foreach ($result as $row) {
+        $emailAddress = $row['email'];
+        $usernameNew = $row['username'];
+        $profilePicture = $row['profilePicture'];
+        $linkText = $row['linkText'];
+        $linkURL = $row['linkURL'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -13,64 +21,25 @@
 </head>
 <body>
 
-<h2 style="text-align: center">PlayerUserName's Profile</h2>
+<a href="/flappyBirb/user/profileEdit.php" style="text-align: center">Edit Profile</a> | <a href="/flappyBirb/game.php" style="text-align: center">Play Game</a>
 
-<div class="card">
-<img src="" alt="Profile Picture">
-</div>
-
-<br><br>
+<h2 style="text-align: center"><?php echo $usernameNew;?>'s Profile Page</h2>
 <hr>
+<p style="text-align: center"><img src=<?php echo $profilePicture;?> class="rounded-circle" width="150"></p>
 
-<h2 style="text-align: center">Status / PlayerUserName's Bio / Date Joined</h2>
+<p style="text-align: center">Email Address:</p2>
+<?php echo $emailAddress;?>
+<br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<p style="text-align: center">Username:</p2>
+<?php echo $usernameNew;?>
+<br>
 
-<label for="status">Status:</label>
-<select id="status" name="status">
-  <option value="online">Online</option>
-  <option value="offline">Offline</option>
-</select>
+<p style="text-align: center">Date Verified:</p2>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+<p style="text-align: center">Coins Collected:</p2>
 
-PlayerUserName's Bio:
-<textarea name="message" rows="10" cols="30">
-</textarea>
-<input type="submit">
+<p style="text-align: center">Total Clicks:</p2>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-
-<label for="dateJoined">Date Joined:</label>
-<input type="text" id="dateJoined" name="dateJoined" value=""><br>
-
-<br><br>
-<hr>
-
-<h2 style="text-align: center">PlayerUserName's Game Data</h2>
-<h2 style="text-align: center">Total Click Count / Total Coins Collected</h2> 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-
-<label for="clickCount">Click Count:</label>
-<input type="text" id="clickCount" name="clickCount" value="">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-
-<label for="clickCount">Coins Collected:</label>
-<input type="text" id="coinsCollected" name="coinsCollected" value=""><br>
-
-<hr>
-
-<h2 style="text-align: center">Player's Social Media</h2>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-snapchat"></a>
-
-</html>
-</body>
+<p style="text-align: center">More Info:</p2>
+<a href="<?php echo $linkURL;?>" target="_blank"><?php echo $linkText;?></a>
