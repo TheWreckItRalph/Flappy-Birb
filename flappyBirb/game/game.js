@@ -321,10 +321,10 @@ const RAD = Math.PI/180;
 
  };
 
-gnd.sprite.src="/inGameAnimations/ground.png";
-bg.sprite.src="/inGameAnimations/BG.png";
-pipe.top.sprite.src="/inGameAnimations/racepipe.png";
-pipe.bot.sprite.src="/inGameAnimations/racepipe.png";
+gnd.sprite.src="/Flappy Bird Backgrounds/ground.png";
+bg.sprite.src="/flappyBirb/game/images/game/BG_copy.png";
+pipe.top.sprite.src="/flappyBirb/game/images/game/racepipe.png";
+pipe.bot.sprite.src="/flappyBirb/game/images/game/racepipe.png";
 UI.gameOver.sprite.src="/tutorial3/img/go.png";
 UI.getReady.sprite.src="/tutorial3/img/getready.png";
 UI.tap[0].sprite.src="/flappyBirb/game/images/tap/t0.png";

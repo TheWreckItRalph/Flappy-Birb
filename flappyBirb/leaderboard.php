@@ -55,7 +55,7 @@ body {
     </tr>
     <tr>
         <th>2nd: <?php echo $username?> </th>
-        <th></th>
+        <th> <?php echo $totalCoins;?> </th>
     </tr>
     <tr>
         <th>3rd:</th>
