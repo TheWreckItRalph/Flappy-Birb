@@ -1,4 +1,11 @@
+// var newGravity = .1;
+// function changeGravity() {
+//     var newGravity = Number(document.getElementById("gravity").value);
+    
+//   }
+
 var newGravity = document.getElementById("gravity");
+
 const RAD = Math.PI/180;
  const scrn = document.getElementById('canvas');
  const sctx = scrn.getContext("2d");
@@ -91,7 +98,7 @@ const RAD = Math.PI/180;
  const pipe = {
      top : {sprite : new Image()},
      bot : {sprite : new Image()},
-     gap: 100,
+     gap: 125,
      moved: true,
      pipes : [],
      draw : function(){
@@ -122,7 +129,6 @@ const RAD = Math.PI/180;
 
  };
 
-
  const bird = {
     animations :
         [
@@ -135,15 +141,9 @@ const RAD = Math.PI/180;
     x : 50,
     y :100,
 
-
-    speed : 1,
-
-
+    speed : 1,    
+    gravity : .125
     
-    gravity : .1,
-
-
-
 
     
     thrust : 3.6,
@@ -245,6 +245,7 @@ const RAD = Math.PI/180;
                 
         }
     }
+    
  };
  const UI = {
     getReady : {sprite : new Image()},
@@ -320,12 +321,12 @@ const RAD = Math.PI/180;
 
  };
 
-gnd.sprite.src="/flappyBirb/game/images/game/ground_copy.png";
-bg.sprite.src="/flappyBirb/game/images/game/BG.png";
-pipe.top.sprite.src="/flappyBirb/game/images/game/toppipe.png";
-pipe.bot.sprite.src="/flappyBirb/game/images/game/botpipe.png";
-UI.gameOver.sprite.src="/flappyBirb/game/images/game/go.png";
-UI.getReady.sprite.src="/flappyBirb/game/images/game/getready.png";
+gnd.sprite.src="/Flappy Bird Backgrounds/ground2.png";
+bg.sprite.src="/flappyBirb/game/images/game/BG_copy.png";
+pipe.top.sprite.src="/gameTest/img/pipe.png";
+pipe.bot.sprite.src="/gameTest/img/pipe.png";
+UI.gameOver.sprite.src="/tutorial3/img/go.png";
+UI.getReady.sprite.src="/tutorial3/img/getready.png";
 UI.tap[0].sprite.src="/flappyBirb/game/images/tap/t0.png";
 UI.tap[1].sprite.src="/flappyBirb/game/images/tap/t1.png";
 bird.animations[0].sprite.src="/flappyBirb/game/images/bird/d0.png";

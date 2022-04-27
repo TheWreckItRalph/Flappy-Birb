@@ -7,16 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>FlappyBird</title>
+    <title>Flappy Birb</title>
     <link rel="stylesheet" href="/flappyBirb/game/style.css" > 
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
   </head>
+  
   <body>
+
+  <a href="/flappyBirb/user/profilePage.php"><button type="button" id="button2">View Profile</button></a>
+
 
   <div class="container">
   <div class="row">
     <div class="col-sm">
-      One of three columns
+      
     </div>
     <div class="col-sm">
     <canvas id="canvas" width="500" height="700"></canvas>
@@ -24,13 +28,11 @@
     <div class="col-sm">
 
 
-    <select id="gravity">
-        <option value=.1>low</option>
-        <option value=.2>high</option>
-    </select>
+
+ 
 
 
-  
+
     </div>
   </div>
 </div>

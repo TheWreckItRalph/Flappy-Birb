@@ -1,6 +1,9 @@
 <?php
     session_start();
     require_once $_SERVER['DOCUMENT_ROOT'].'/flappyBirb/db/connect.php';
+
+    $sql = "SELECT * FROM gameData";
+    $result = mysqli_query($conn, $sql);
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +45,7 @@ body {
         <th>Coins</th>
     </tr>
     <tr>
-        <th>1st:</th>
+        <th>1st: <?php echo $username?> </th>
         <th></th>
     </tr>
     <tr>
