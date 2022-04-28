@@ -61,27 +61,176 @@
     <input type="text" name="linkURL" value="<?php echo $linkURL;?>"><br>
     <p>Profile Picture</p>
     <input type="text" name="profilePicture" value="<?php echo $profileImage;?>"><br><br>
+
+    <input type="submit" name="btnUpdateProfile" value="Update Profile"> 
+    <br><br>
+
     <details>
-        <summary>Game Profile Pictures</summary>
-        <ul>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/defaultpic.png" target="_blank">Default</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/dtophatpic.png" target="_blank">Default Top Hat</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/cockatielpic.png" target="_blank">Cockatiel</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/redpic.png" target="_blank">Red</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/rtophatpic.png" target="_blank">Red Top Hat</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/angrypic.png" target="_blank">Red Angry Bird</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/orangepic.png" target="_blank">Orange</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/otophatpic.png" target="_blank">Orange Top Hat</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/rainbowpic.png" target="_blank">Rainbow</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/greenpic.png" target="_blank">Green</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/gtophatpic.png" target="_blank">Green Top Hat</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/angry2pic.png" target="_blank">Black Angry Bird</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/bluepic.png" target="_blank">Blue</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/btophat.png" target="_blank">Blue Top Hat</a></li>
-        <li><a href="https://ide.codeanywhere.com/Flappy-Bird-349836947169/mini-browser/home/cabox/workspace/Flappy%20Bird%20Profile%20Pictures/macawpic.png" target="_blank">Macaw</a></li>
-        <ul>
+    <summary>Game Profile Pictures</summary>
+    <br>
+    <ul>
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div class="image123">
+      <div class="imgContainer">
+    <table cellpadding="2" cellspacing="2">
+    <tr>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/defaultpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/dtophatpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/cockatielpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    </tr>
+    <br>
+    <tr>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/redpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/rtophatpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/angrypic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    </tr>
+    <br> 
+    <tr>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/orangepic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/otophatpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/rainbowpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    </tr>
+    <br>
+    <tr>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/greenpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/gtophatpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/angry2pic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    </tr>
+    <br>                               
+    <tr>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/bluepic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/btophat.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    <td>
+    <img
+          src="/Flappy Bird Profile Pictures/macawpic.png"
+          height="100"
+          width="100"
+          id="move"
+        />
+    </td>
+    </tr>
+    </table>   
+    </ul>
     </details>
     <br>
+    <script type="text/javascript">
+         $("img").on("click", function() {
+      alert(this.src);
+
+      var el = document.createElement("textarea");
+
+      el.value = this.src;
+      el.setAttribute("readonly", "");
+      el.style = { position: "absolute", left: "-9999px" };
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+      copyStringToClipboard("abc123");
+      document.execCommand("copy");
+    });
+        
+    </script>
+
     
-    <input type="submit" name="btnUpdateProfile"value="Update Profile"> 
 </form>  
