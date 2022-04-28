@@ -12,12 +12,12 @@
 <body>
 <p style="text-align:center;"><img src="/Images/title.png" width="300"></p>
 <marquee direction="right">  
-<img src="/Animated Flappy Birds/dtophat.gif" width="100" height="100">
-<img src="/Animated Flappy Birds/angry2.gif" width="100" height="100">
-<img src="/Animated Flappy Birds/angry.gif" width="100" height="100">
-<img src="/Animated Flappy Birds/macaw.gif" width="100" height="100">
-<img src="/Animated Flappy Birds/cockatiel.gif" width="100" height="100">
-<img src="/Animated Flappy Birds/default.gif" width="100" height="100">
+<img src="/AnimatedFlappyBirds/dtophat.gif" width="100" height="100">
+<img src="/AnimatedFlappyBirds/angry2.gif" width="100" height="100">
+<img src="/AnimatedFlappyBirds/angry.gif" width="100" height="100">
+<img src="/AnimatedFlappyBirds/macaw.gif" width="100" height="100">
+<img src="/AnimatedFlappyBirds/cockatiel.gif" width="100" height="100">
+<img src="/AnimatedFlappyBirds/default.gif" width="100" height="100">
 </marquee>
 
 <form action="/flappyBirb/index.php" method="POST" style="text-align:center" name="login">

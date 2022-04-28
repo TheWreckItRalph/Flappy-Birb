@@ -2,7 +2,7 @@
     session_start();
     require_once $_SERVER['DOCUMENT_ROOT'].'/flappyBirb/db/connect.php';
 
-    $sql = "SELECT * FROM `gameData`";
+    $sql = "SELECT * FROM gameData WHERE uid";
     $result = mysqli_query($conn, $sql);
 
     foreach ($result as $row) {

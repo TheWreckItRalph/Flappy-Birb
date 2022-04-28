@@ -25,9 +25,7 @@
     <canvas id="canvas" width="500" height="700"></canvas>
        </div>
     <div class="col-sm">
-        <select id="gravity">
-            <option value=".125">Regular</option>
-        </select>
+        Third Column
     </div>
   </div>
 </div>
