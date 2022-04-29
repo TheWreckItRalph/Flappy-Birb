@@ -2,19 +2,19 @@
     session_start();
     require_once $_SERVER['DOCUMENT_ROOT'].'/flappyBirb/db/connect.php';
 
-    $sql = "SELECT * FROM `gameData`";
+    $sql = "SELECT * FROM gameData";
     $result = mysqli_query($conn, $sql);
 
     foreach ($result as $row) {
-        $username = $row['username'];
-        $totalCoins = $row['totalCoins'];
+        $usernameNew = $row['username'];
+        $highScore = $row['highScore'];
     }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Leaderboard Page</title>
+    <title>High Score Leaderboard</title>
 
 <style>
 table {
@@ -47,15 +47,15 @@ body {
 <table>
     <tr>
         <th>Username</th>
-        <th>Coins</th>
+        <th>High Scores</th>
     </tr>
     <tr>
-        <th>1st: <?php echo $username?> </th>
-        <th> <?php echo $totalCoins;?> </th>
+        <th>1st: <?php echo $usernameNew;?> </th>
+        <th> <?php echo $highScore;?> </th>
     </tr>
     <tr>
-        <th>2nd: <?php echo $username?> </th>
-        <th> <?php echo $totalCoins;?> </th>
+        <th>2nd: <?php echo $usernameNew;?> </th>
+        <th> <?php echo $highScore;?> </th>
     </tr>
     <tr>
         <th>3rd:</th>

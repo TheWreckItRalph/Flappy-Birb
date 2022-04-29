@@ -64,6 +64,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } else {
               echo "No Record Found For That Email Address";
             }
+            // if (isset($_POST [$status == 1])) {
+            //     $dateTime = date('Y-m-d H:i:s');
+            //     // insert into DB
+            //     $sqlDateVerified = "INSERT INTO profiles (dateVerified)
+            //        VALUES ('$dateTime')";
+            // }
            
             mysqli_close($conn);
     }
@@ -82,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 <br>
-<script src="/test3/game.js"></script>
+<script src="/flappyBirb/game/game.js"></script>
 
 </body>
 </html>

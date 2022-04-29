@@ -19,15 +19,12 @@
   <div class="container">
   <div class="row">
     <div class="col-sm">
-    <a href="/flappyBirb/user/profilePage.php"><button type="button" id="button2">View Profile</button></a>
-    </div>
+    <a name="button2" id="button2" href="/flappyBirb/user/profilePage.php"><button>View Profile</button></a>    </div>
     <div class="col-sm">
     <canvas id="canvas" width="500" height="700"></canvas>
        </div>
     <div class="col-sm">
-        <select id="gravity">
-            <option value=".125">Regular</option>
-        </select>
+        <a href="/flappyBirb/leaderboardCoins.php"><button>View LeaderBoard</button></a>
     </div>
   </div>
 </div>
@@ -37,7 +34,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="/flappyBirb/game/game.js"></script> 
+    <script src="/flappyBirb/game/game_copy.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->

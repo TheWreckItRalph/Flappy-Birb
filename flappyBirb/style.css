@@ -18,3 +18,10 @@ body {
     background-size: 100% 230%;
   }
 
+
+  #button2 {
+    top:0; 
+    right:0;
+    margin-left:-8px;
+    margin-top:7px;
+  }

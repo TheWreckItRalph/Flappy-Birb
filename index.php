@@ -22,7 +22,7 @@
   <label for="password"><img src="Images/password.png" width="90" height="20"></label><br>
   <input type="password" id="password" name="password" style="font-size:xxpt;height:20px" onKeyup="checkform()"><br> <input type="checkbox" onclick="myFunction()"><img src="Images/showpassword.png" width="100" height="20"><br><br>
   <input type="submit" name="BTN-submit" id="Login" value="Login" disabled="disabled"><br><br>
-  <a href="/signUp.php" style="text-align:center">Sign Up</a> | <a href="/index.php" style="text-align:center">Log In</a>
+  <a href="/signUp.php" style="text-align:center">Sign Up</a> | <a href="/index.php" style="text-align:center">Log In</a> | <a href="https://github.com/TheWreckItRalph/Flappy-Birb" style="text-align:center">Github</a>
 </form> 
 
 <br>

@@ -198,14 +198,13 @@ const bird = {
        }
    },
    setRotation : function(){
-       if(this.speed <= 0)
-       {
-           
-           this.rotatation = Math.max(-25, -25 * this.speed/(-1*this.thrust));
-       }
-       else if(this.speed > 0 ) {
-           this.rotatation = Math.min(90, 90 * this.speed/(this.thrust*2));
-       }
+        if(this.speed < 0 && this.speed < 3.6)
+        {
+            this.rotatation = -25;
+        }
+        else if(this.speed > 0) {
+            this.rotatation = Math.min(90, 90 * this.speed/(this.thrust*2.15));
+        }
    },
    collisioned : function(){
        if(!pipe.pipes.length) return;

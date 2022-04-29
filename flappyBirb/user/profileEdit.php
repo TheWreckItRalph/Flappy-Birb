@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/flappyBirb/user/profile.css"> 
+
 <?php 
     session_start();
     require_once $_SERVER['DOCUMENT_ROOT'].'/flappyBirb/db/connect.php';
@@ -48,7 +49,9 @@
     }
 ?>
 
-<a href="/flappyBirb/user/profilePage.php">View Profile</a>
+<a href="/flappyBirb/user/profilePage.php"><button>View Profile</button></a>
+
+
 
 <form action="/flappyBirb/user/profileEdit.php" style="margin: auto; width: 220px;" method="POST">
     <p>What is Your Email?</p>
@@ -60,7 +63,7 @@
     <p>Link URL</p>
     <input type="text" name="linkURL" value="<?php echo $linkURL;?>"><br>
     <p>Profile Picture</p>
-    <input type="text" name="profilePicture" value="<?php echo $profileImage;?>"><br><br>
+    <input type="text" name="profilePicture" value="<?php echo $profilePicture;?>"><br><br>
 
     <input type="submit" name="btnUpdateProfile" value="Update Profile"> 
     <br><br>

@@ -10,6 +10,10 @@
         $profilePicture = $row['profilePicture'];
         $linkText = $row['linkText'];
         $linkURL = $row['linkURL'];
+        $totalCoins = $row['totalCoins'];
+        $totalClicks = $row['totalClicks'];
+        $dateVerified = $row['dateVerified'];
+        $highScore = $row['highScore'];
     }
 ?>
 
@@ -21,7 +25,10 @@
 </head>
 <body>
 
-<a href="/flappyBirb/user/profileEdit.php" style="text-align: center">Edit Profile</a> | <a href="/flappyBirb/game.php" style="text-align: center">Play Game</a>
+<a href="/flappyBirb/user/profileEdit.php"><button>Edit Profile</button></a> | <a href="/flappyBirb/game.php"><button>Play Game</button></a>
+
+<a name="logout" id="logout" href="/flappyBirb/index.php"><button>Logout</button></a>
+
 
 <h2 style="text-align: center"><?php echo $usernameNew;?>'s Profile Page</h2>
 <hr>
@@ -36,10 +43,20 @@
 <br>
 
 <p style="text-align: center">Date Verified:</p2>
+<?php echo $dateVerified;?>
+<br>
 
 <p style="text-align: center">Coins Collected:</p2>
+<?php echo $totalCoins;?>
+<br>
 
 <p style="text-align: center">Total Clicks:</p2>
+<?php echo $totalClicks;?>
+<br>
+
+<p style="text-align: center">High Score:</p2>
+<?php echo $highScore;?>
+<br>
 
 <p style="text-align: center">More Info:</p2>
 <a href="<?php echo $linkURL;?>" target="_blank"><?php echo $linkText;?></a>

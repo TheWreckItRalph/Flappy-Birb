@@ -18,3 +18,10 @@ body {
     background-color: #23A4C4;
   }
 
+
+  
+  #button2 {
+    position:relative;
+    margin-left:-50px;
+    top:7px;
+}
